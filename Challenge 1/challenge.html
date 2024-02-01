@@ -12,17 +12,24 @@
   <body>
     <main class="main">
         <div class="encriptador">
-            <textarea id="paragraph" placeholder="Escribe aqui tu mensaje" ></textarea>
-            <div class="botones">
-                <button onclick="encriptar()">Encriptar</button>
-                <button onclick="desencriptar()">Desencriptar</button>
-            </div>
+          <div class="paragraph">
+            <textarea id="paragraph" placeholder="Escribe aqui tu mensaje"></textarea>
+          </div>
+          <div class="botones">
+            <button onclick="encriptar()">Encriptar</button>
+            <button onclick="desencriptar()">Desencriptar</button>
+          </div>
         </div>
         <div class="outcome">
-            <div class="resultado" id="resultado"></div>
-            <div class="botones">
-                <button onclick="copiar()">Copiar</button>
+          <div class="resultado">
+            <div id="resultado" class="resultado-img">
+              <img src="Muñeco.png"/>
+              <div class="notfound">Ningun mensaje fue encontrado</div>
             </div>
+          </div>
+          <div class="botones">
+            <button id="copiar" class="copiar" onclick="copiar()">Copiar</button>
+          </div>
         </div>
       </main>
     <script src="challenge.js"></script>
